@@ -1,8 +1,98 @@
-.navbar {
-  background-color: transparent;
-  transition: background-color 0.5s ease-in-out;
-}
-
 .scrolled {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+  color: #ed2e48;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav-menu {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.active-nav {
+  color: #ed2e48;
+}
+
+.nav-link:hover {
+  color: #ed2e48;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #ed2e48;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.active-link-1 {
+  -webkit-transform: translateX(42px);
+  transform: translateX(42px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.active-link-2 {
+  -webkit-transform: translateX(162px);
+  transform: translateX(162px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.active-link-3 {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.active-link-4 {
+  -webkit-transform: translateX(415px);
+  transform: translateX(415px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.active-link-5 {
+  -webkit-transform: translateX(530px);
+  transform: translateX(530px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.active-link-6 {
+  -webkit-transform: translateX(635px);
+  transform: translateX(635px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
 }

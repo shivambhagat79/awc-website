@@ -1,29 +1,61 @@
 <nav
-  class="navbar navbar-dark fixed-top sticky-top-sm navbar-expand-lg"
+  class="nav-menu d-flex p-2 fixed-top justify-content-center align-items-center"
   [ngClass]="{ scrolled: isScrolled }"
 >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+  <div class="logo me-auto ms-5">AWC</div>
+  <div class="mx-auto">
+    <a
+      (mouseenter)="onHoverIn(1)"
+      (mouseleave)="onHoverOut(1)"
+      (click)="onClick(1)"
+      class="nav-link mx-3 active-nav"
+      href="#"
+      >Home</a
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
+    <a
+      (mouseenter)="onHoverIn(2)"
+      (mouseleave)="onHoverOut(2)"
+      (click)="onClick(2)"
+      class="nav-link mx-3"
+      href="#"
+      >About
+      <span style="font-family: 'Raleway', sans-serif; font-size: 1.1em"
+        >AWC</span
+      ></a
+    >
+    <a
+      (mouseenter)="onHoverIn(3)"
+      (mouseleave)="onHoverOut(3)"
+      (click)="onClick(3)"
+      class="nav-link mx-3"
+      href="#"
+      >Gallery</a
+    >
+    <a
+      (mouseenter)="onHoverIn(4)"
+      (mouseleave)="onHoverOut(4)"
+      (click)="onClick(4)"
+      class="nav-link mx-3"
+      href="#"
+      >Testimonials</a
+    >
+    <a
+      (mouseenter)="onHoverIn(5)"
+      (mouseleave)="onHoverOut(5)"
+      (click)="onClick(5)"
+      class="nav-link mx-3"
+      href="#"
+      >Acts</a
+    >
+    <a
+      (mouseenter)="onHoverIn(6)"
+      (mouseleave)="onHoverOut(6)"
+      (click)="onClick(6)"
+      class="nav-link mx-3"
+      href="#"
+      >Contact us</a
+    >
+    <div class="dot active-link-1" id="dot"></div>
   </div>
+  <div class="btn btn-danger ms-auto me-5 px-3">FAQs</div>
 </nav>
