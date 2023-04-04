@@ -1,5 +1,5 @@
 <div class="header d-flex flex-column w-100 text-center justify-content-center">
-  <div data-aos="fade-up" data-aos-delay="150">
+  <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
     <h4 class="text-white">Indain Institute of Technology Ropar</h4>
     <h1 class="">Animal Welfare<br />Committee</h1>
     <h4 class="text-white">
@@ -11,8 +11,11 @@
     (mouseleave)="onHoverOut()"
     class="donate-btn container hover mt-5 py-4 px-5 border border-white d-flex flex-column justify-content-center"
     data-aos="zoom-in"
+    data-aos-duration="500"
+    (click)="onDonateButtonClicked()"
   >
-    <i class="fa-solid fa-gift fa-2xl text-white mb-4 mt-4 hover"></i>
+    <i class="bi bi-gift text-white mb-4 mt-4 hover"></i>
+    <!-- <i class="fa-solid fa-gift fa-2xl text-white mb-4 mt-4 hover"></i> -->
     <h3 class="text-white hover">Donate</h3>
   </div>
 </div>

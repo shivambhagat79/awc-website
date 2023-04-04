@@ -46,4 +46,8 @@ export class NavbarComponent {
 
     this.activeIndex = index;
   }
+
+  onFAQButtonClicked() {
+    window.location.href = '#FAQs';
+  }
 }

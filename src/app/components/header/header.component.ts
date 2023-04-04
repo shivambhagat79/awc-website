@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
+  constructor(private router: Router) {}
+
   onHoverIn() {
     const elements = document.querySelectorAll('.hover');
     elements.forEach((element) => {
@@ -20,5 +23,9 @@ export class HeaderComponent {
       element.classList.remove('text-danger', 'border-danger');
       element.classList.add('text-white', 'border-white');
     });
+  }
+
+  onDonateButtonClicked() {
+    this.router.navigate(['donation']);
   }
 }

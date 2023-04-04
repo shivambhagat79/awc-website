@@ -58,40 +58,40 @@
 }
 
 .active-link-2 {
-  -webkit-transform: translateX(162px);
-  transform: translateX(162px);
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
 .active-link-3 {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
+  -webkit-transform: translateX(265px);
+  transform: translateX(265px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
 .active-link-4 {
-  -webkit-transform: translateX(415px);
-  transform: translateX(415px);
+  -webkit-transform: translateX(370px);
+  transform: translateX(370px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
 .active-link-5 {
-  -webkit-transform: translateX(530px);
-  transform: translateX(530px);
+  -webkit-transform: translateX(460px);
+  transform: translateX(460px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
 .active-link-6 {
-  -webkit-transform: translateX(635px);
-  transform: translateX(635px);
+  -webkit-transform: translateX(565px);
+  transform: translateX(565px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
