@@ -7,7 +7,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  currentPage: string = 'home';
+
+  constructor(private router: Router) {
+    if (router.url === '/home') {
+      this.currentPage = 'home';
+    } else if (router.url === '/gallery/all') {
+      this.currentPage = 'gallery';
+    }
+  }
 
   onHoverIn() {
     const elements = document.querySelectorAll('.hover');

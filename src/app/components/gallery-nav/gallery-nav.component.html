@@ -1,0 +1,37 @@
+<section style="color: rgba(0, 0, 0, 0.5)">
+  <nav class="fill bg-dark">
+    <div class="container">
+      <ul id="nav-ul" data-aos="fade-up" data-aos-delay="100">
+        <li>
+          <a [ngClass]="{ 'active-nav': activeIndex === 1 }" routerLink="all"
+            >All</a
+          >
+        </li>
+        <li>
+          <a [ngClass]="{ 'active-nav': activeIndex === 2 }" routerLink="birds"
+            >Birds</a
+          >
+        </li>
+        <li>
+          <a [ngClass]="{ 'active-nav': activeIndex === 3 }" routerLink="dogs"
+            >Dogs</a
+          >
+        </li>
+        <li>
+          <a
+            [ngClass]="{ 'active-nav': activeIndex === 4 }"
+            routerLink="squirrels"
+            >Squirrels</a
+          >
+        </li>
+        <li>
+          <a
+            [ngClass]="{ 'active-nav': activeIndex === 5 }"
+            routerLink="faunalfriendships"
+            >Faunal Friendships</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>

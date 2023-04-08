@@ -1,21 +1,48 @@
 <div class="header d-flex flex-column w-100 text-center justify-content-center">
-  <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
-    <h4 class="text-white">Indain Institute of Technology Ropar</h4>
-    <h1 class="">Animal Welfare<br />Committee</h1>
-    <h4 class="text-white">
-      Taking the chances &nbsp; • &nbsp; To change circumstances
-    </h4>
+  <!-- HOME -->
+  <div *ngIf="currentPage === 'home'">
+    <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
+      <h4 class="text-white">Indain Institute of Technology Ropar</h4>
+      <h1 class="">Animal Welfare<br />Committee</h1>
+      <h4 class="text-white">
+        Taking the chances &nbsp; • &nbsp; To change circumstances
+      </h4>
+    </div>
+    <div
+      (mouseenter)="onHoverIn()"
+      (mouseleave)="onHoverOut()"
+      class="donate-btn container hover mt-5 py-4 px-5 border border-white d-flex flex-column justify-content-center"
+      data-aos="zoom-in"
+      data-aos-duration="500"
+      (click)="onDonateButtonClicked()"
+    >
+      <i class="bi bi-gift text-white mb-4 mt-4 hover"></i>
+      <h3 class="text-white hover">Donate</h3>
+    </div>
   </div>
-  <div
-    (mouseenter)="onHoverIn()"
-    (mouseleave)="onHoverOut()"
-    class="donate-btn container hover mt-5 py-4 px-5 border border-white d-flex flex-column justify-content-center"
-    data-aos="zoom-in"
-    data-aos-duration="500"
-    (click)="onDonateButtonClicked()"
-  >
-    <i class="bi bi-gift text-white mb-4 mt-4 hover"></i>
-    <!-- <i class="fa-solid fa-gift fa-2xl text-white mb-4 mt-4 hover"></i> -->
-    <h3 class="text-white hover">Donate</h3>
+
+  <!-- GALLERY -->
+  <div *ngIf="currentPage === 'gallery'">
+    <div
+      class="container"
+      data-aos="fade-up"
+      data-aos-delay="150"
+      data-aos-duration="500"
+    >
+      <h1 class="">A Walk on the Wild Side of IIT Ropar</h1>
+      <h4 class="text-white my-5">
+        A closer look at the wild animals that call our campus home.
+      </h4>
+      <p class="text-white">
+        Join us on a journey through the lush greenery of IIT Ropar, where
+        nature flourishes and a diverse range of wild animals call it home.
+        Explore the beauty and serenity of the campus as we showcase stunning
+        photographs capturing the essence of our unique wildlife community. From
+        graceful birds to playful squirrels, each shot is a testament to the
+        natural wonders that inhabit our grounds. So come, take a walk on the
+        wild side with us, and be mesmerized by the beauty of IIT Ropar's
+        wildlife."
+      </p>
+    </div>
   </div>
 </div>

@@ -1,19 +1,22 @@
+<app-loader *ngIf="isLoading"></app-loader>
+
 <img
   class="background-image-one w-100 position-fixed"
   [src]="imageURL"
   alt=""
   srcset=""
+  *ngIf="!isLoading"
 />
-<header>
+<header *ngIf="!isLoading">
   <app-header></app-header>
 </header>
 
-<main>
+<main *ngIf="!isLoading">
   <app-about></app-about>
   <app-faqs></app-faqs>
   <app-testimonials></app-testimonials>
 </main>
 
-<footer>
+<footer *ngIf="!isLoading">
   <app-footer></app-footer>
 </footer>

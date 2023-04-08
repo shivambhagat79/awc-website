@@ -13,6 +13,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { InitiativesComponent } from './pages/initiatives/initiatives.component';
 import { DonationComponent } from './pages/donation/donation.component';
+import { GalleryNavComponent } from './components/gallery-nav/gallery-nav.component';
+import { GalleryMainComponent } from './components/gallery-main/gallery-main.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { DonationComponent } from './pages/donation/donation.component';
     HomeComponent,
     GalleryComponent,
     InitiativesComponent,
-    DonationComponent
+    DonationComponent,
+    GalleryNavComponent,
+    GalleryMainComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,17 @@ import { DonationComponent } from './pages/donation/donation.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'gallery', component: GalleryComponent },
+  {
+    path: 'gallery',
+    component: GalleryComponent,
+    children: [
+      { path: 'all', component: GalleryComponent },
+      { path: 'birds', component: GalleryComponent },
+      { path: 'dogs', component: GalleryComponent },
+      { path: 'squirrels', component: GalleryComponent },
+      { path: 'faunalfriendships', component: GalleryComponent },
+    ],
+  },
   { path: 'initiatives', component: InitiativesComponent },
   { path: 'donation', component: DonationComponent },
   {
