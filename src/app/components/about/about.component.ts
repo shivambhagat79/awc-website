@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   carousel_index: string = 'F';
+  interval_about: any;
 
   ngOnInit(): void {
-    setInterval(() => {
+    this.interval_about = setInterval(() => {
       this.carouselNext();
     }, 4000);
   }
@@ -26,5 +27,9 @@ export class AboutComponent implements OnInit {
     } else if (this.carousel_index === 'I') {
       this.carousel_index = 'F';
     }
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.interval_about);
   }
 }

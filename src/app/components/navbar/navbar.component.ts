@@ -1,13 +1,32 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   isScrolled: boolean = false;
   activeIndex: number = 1;
+
+  constructor(private router: Router) {}
+  ngOnInit(): void {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (event.url === '/home') {
+          this.onClick(1);
+        } else if (event.url === '/initiatives') {
+          this.onClick(2);
+        } else if (event.url === '/gallery') {
+          this.onClick(3);
+        } else if (event.url === '/donation') {
+          this.onClick(4);
+          this.isScrolled = true;
+        }
+      }
+    });
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

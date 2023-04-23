@@ -24,8 +24,6 @@ export class GalleryNavComponent implements OnInit {
         } else if (event.url === '/gallery/faunalfriendships') {
           this.activeIndex = 5;
         }
-
-        console.log(this.activeIndex);
       }
     });
   }

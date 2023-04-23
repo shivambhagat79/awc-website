@@ -1,7 +1,3 @@
-/* .gallery-img {
-  object-fit: cover;
-} */
-
 .content {
   padding-left: 2px;
   padding-right: 2px;
@@ -12,9 +8,7 @@
   padding: 2px;
   transition: 0.3s;
 }
-.gallery:hover .gallery__image {
-  filter: grayscale(1);
-}
+
 .gallery__column {
   display: flex;
   flex-direction: column;
@@ -26,14 +20,13 @@
   overflow: hidden;
 }
 .gallery__link:hover .gallery__image {
-  filter: grayscale(0);
-}
-.gallery__link:hover .gallery__caption {
-  opacity: 1;
+  filter: brightness(0.75);
 }
 
 .gallery__image {
   display: block;
+  max-height: 400px;
+  object-fit: cover;
   width: 100%;
   transition: 0.3s;
 }

@@ -14,8 +14,12 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { InitiativesComponent } from './pages/initiatives/initiatives.component';
 import { DonationComponent } from './pages/donation/donation.component';
 import { GalleryNavComponent } from './components/gallery-nav/gallery-nav.component';
-import { GalleryMainComponent } from './components/gallery-main/gallery-main.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { GalleryAllComponent } from './components/gallery-main/gallery-all/gallery-all.component';
+import { GalleryBirdsComponent } from './components/gallery-main/gallery-birds/gallery-birds.component';
+import { GalleryDogsComponent } from './components/gallery-main/gallery-dogs/gallery-dogs.component';
+import { GallerySquirrelsComponent } from './components/gallery-main/gallery-squirrels/gallery-squirrels.component';
+import { GalleryFaunalfriendshipsComponent } from './components/gallery-main/gallery-faunalfriendships/gallery-faunalfriendships.component';
 
 @NgModule({
   declarations: [
@@ -31,14 +35,15 @@ import { LoaderComponent } from './components/loader/loader.component';
     InitiativesComponent,
     DonationComponent,
     GalleryNavComponent,
-    GalleryMainComponent,
-    LoaderComponent
+    LoaderComponent,
+    GalleryAllComponent,
+    GalleryBirdsComponent,
+    GalleryDogsComponent,
+    GallerySquirrelsComponent,
+    GalleryFaunalfriendshipsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

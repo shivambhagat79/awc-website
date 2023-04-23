@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimonials.component.html',
@@ -7,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimonialsComponent implements OnInit {
   carousel_index: string = 'A';
+  interval: any;
 
   ngOnInit(): void {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       this.carouselNext();
     }, 5000);
   }
@@ -26,5 +26,9 @@ export class TestimonialsComponent implements OnInit {
     } else if (this.carousel_index === 'D') {
       this.carousel_index = 'A';
     }
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.interval);
   }
 }

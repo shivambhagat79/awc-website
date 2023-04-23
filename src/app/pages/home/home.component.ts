@@ -16,9 +16,9 @@ export class HomeComponent implements AfterViewInit {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     if (window.pageYOffset < 1200) {
-      this.imageURL = '../../../assets/images/home/header-bg.jpg';
+      this.imageURL = 'assets/images/home/header-bg.jpg';
     } else {
-      this.imageURL = '../../../assets/images/home/testimonials-bg.jpg';
+      this.imageURL = 'assets/images/home/testimonials-bg.jpg';
     }
   }
 }

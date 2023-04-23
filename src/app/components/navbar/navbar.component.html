@@ -36,14 +36,14 @@
       routerLink="donation"
       >Donate</a
     >
-    <a
-      (mouseenter)="onHoverIn(5)"
-      (mouseleave)="onHoverOut(5)"
-      (click)="onClick(5)"
-      class="nav-link mx-3"
-      href="#"
-      >Acts</a
-    >
+
+    <div class="acts-dropdown">
+      <a href="#" class="nav-link mx-3">Acts</a>
+      <div class="dropdown-content">
+        <a href="assets/files/Guidlines.pdf">FVS Guidelines</a>
+        <a href="assets/files/PCA_act_brief.pdf">PCA Act in Breif</a>
+      </div>
+    </div>
     <a
       (mouseenter)="onHoverIn(6)"
       (mouseleave)="onHoverOut(6)"
@@ -52,6 +52,7 @@
       href="home#footer"
       >Contact us</a
     >
+
     <div class="dot active-link-1" id="dot"></div>
   </div>
   <div class="btn btn-danger ms-auto me-5 px-3" (click)="onFAQButtonClicked()">

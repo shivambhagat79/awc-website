@@ -1,0 +1,16 @@
+<div class="content">
+  <div class="gallery">
+    <div *ngFor="let i of numCols" class="gallery__column">
+      <a
+        *ngFor="let item of col(i)"
+        href="{{ item }}"
+        target="_blank"
+        class="gallery__link"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <img src="{{ item }}" class="gallery__image" />
+      </a>
+    </div>
+  </div>
+</div>
